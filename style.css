@@ -32,6 +32,7 @@ body {
 .data-section {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 40px;
     gap: 10px;
     overflow-y: auto;
     flex: 1;
@@ -41,9 +42,11 @@ body {
     background: white;
     border: 1px solid #ddd;
     padding: 20px;
+   
     border-radius: 10px;
     flex: 1 1 calc(50% - 10px);
     box-sizing: border-box;
+    
 }
 
 @media (min-width: 600px) {
@@ -55,14 +58,18 @@ body {
     .profile-picture {
         flex: 1;
     }
-
+    
     .data-section {
         flex: 2;
+    }
+    .data-container{
+        width:auto;
     }
 }
 
 @media (max-width: 600px) {
     .data-container {
         flex: 1 1 100%;
+        width: auto;
     }
 }
